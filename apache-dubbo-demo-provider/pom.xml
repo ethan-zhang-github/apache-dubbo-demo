@@ -11,6 +11,10 @@
 
     <artifactId>apache-dubbo-demo-provider</artifactId>
 
+    <properties>
+        <dubbo.version>2.7.4.1</dubbo.version>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>priv.just1984</groupId>
@@ -21,6 +25,19 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>${dubbo.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.dubbo</groupId>
+            <artifactId>dubbo-dependencies-zookeeper</artifactId>
+            <version>${dubbo.version}</version>
+            <type>pom</type>
         </dependency>
     </dependencies>
 
